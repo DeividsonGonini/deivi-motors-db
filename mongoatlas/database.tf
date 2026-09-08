@@ -6,7 +6,7 @@ resource "mongodbatlas_project" "project" {
 
 resource "mongodbatlas_advanced_cluster" "cluster-mongodb" {
   project_id   = mongodbatlas_project.project.id
-  name         = "fiap"
+  name         = "deivi-motors"
   cluster_type = "REPLICASET"
 
   replication_specs = [
